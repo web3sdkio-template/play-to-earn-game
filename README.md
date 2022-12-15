@@ -8,10 +8,10 @@ The game is a "mining" game, where your character mines for gold gems!
 
 In the beginning, you start out with nothing! In order to play the game, you need to:
 
-1. Mint your character NFT (ERC-1155 using the [Edition Drop](https://portal.web3sdk.io/pre-built-contracts/edition-drop) contract)
-2. Purchase a pickaxe NFT from the "Shop" (Another ERC-1155 using an [Edition Drop](https://portal.web3sdk.io/pre-built-contracts/edition-drop) contract)
-3. "Equip" (stake) the pickaxe NFT in the [Mining](./contracts/contracts/Mining.sol) contract (built with [web3sdkio deploy](https://portal.web3sdk.io/web3sdkio-deploy))
-4. Start earning "Gold Gems"; ERC-20 tokens (using the [Token](https://portal.web3sdk.io/pre-built-contracts/token) contract)
+1. Mint your character NFT (ERC-1155 using the [Edition Drop](https://docs.web3sdk.io/pre-built-contracts/edition-drop) contract)
+2. Purchase a pickaxe NFT from the "Shop" (Another ERC-1155 using an [Edition Drop](https://docs.web3sdk.io/pre-built-contracts/edition-drop) contract)
+3. "Equip" (stake) the pickaxe NFT in the [Mining](./contracts/contracts/Mining.sol) contract (built with [web3sdkio deploy](https://docs.web3sdk.io/web3sdkio-deploy))
+4. Start earning "Gold Gems"; ERC-20 tokens (using the [Token](https://docs.web3sdk.io/pre-built-contracts/token) contract)
 
 <!-- Image of miner -->
 <img src='./application/public/mine.gif' height='48'>
@@ -34,7 +34,7 @@ For example, when you buy the "Stone Hammer" (token ID `1`) for 10 GEMs, you wil
 ( 1 + 1 ) * 10_000_000_000_000 / 100_000_000_000_000_000 gold gems per block.
 ```
 
-**Check out the Demo here**: https://play-to-earn.web3sdkio-example.com/
+**Check out the Demo here**: https://play-to-earn.web3sdkio-template.com/
 
 ## Using this Example
 
@@ -57,9 +57,9 @@ This project uses 4 contracts built with web3sdkio:
 
 Learn how to deploy and configure these contracts using the web3sdkio portal documentation:
 
-- [Edition Drop](https://portal.web3sdk.io/pre-built-contracts/edition-drop)
-- [Token](https://portal.web3sdk.io/pre-built-contracts/token)
-- [web3sdkio deploy](https://portal.web3sdk.io/web3sdkio-deploy)
+- [Edition Drop](https://docs.web3sdk.io/pre-built-contracts/edition-drop)
+- [Token](https://docs.web3sdk.io/pre-built-contracts/token)
+- [web3sdkio deploy](https://docs.web3sdk.io/web3sdkio-deploy)
 
 ## Guide
 
@@ -75,7 +75,7 @@ The project is divided into two parts:
 
 ### Deploying the Mining Contract
 
-We can deploy the `Mining` contract using [web3sdkio deploy](https://portal.web3sdk.io/web3sdkio-deploy)!
+We can deploy the `Mining` contract using [web3sdkio deploy](https://docs.web3sdk.io/web3sdkio-deploy)!
 
 ```bash
 # Change to the contracts folder
@@ -189,8 +189,8 @@ The application interacts with all `4` of the contracts we created by using the 
 
 You can learn more about the web3sdkio SDK's here:
 
-- [React](https://portal.web3sdk.io/react)
-- [TypeScript](https://portal.web3sdk.io/typescript)
+- [React](https://docs.web3sdk.io/react)
+- [TypeScript](https://docs.web3sdk.io/typescript)
 
 ### Connecting to Wallets
 
@@ -208,7 +208,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 Which allows us to use any of the React SDK's hooks in our application!
 
-On the [index.tsx](./application/pages/index.tsx) page, we use [useMetamask](https://portal.web3sdk.io/react/react.usemetamask) and [useAddress](https://portal.web3sdk.io/react/react.useaddress) to connect and read to the user's wallet.
+On the [index.tsx](./application/pages/index.tsx) page, we use [useMetamask](https://docs.web3sdk.io/react/react.usemetamask) and [useAddress](https://docs.web3sdk.io/react/react.useaddress) to connect and read to the user's wallet.
 
 ```tsx
 const connectWithMetamask = useMetamask();
@@ -395,7 +395,7 @@ const { data: ownedPickaxes, isLoading } = useOwnedNFTs(
 );
 ```
 
-Map / Display each using the [`Web3sdkioNftMedia`](https://portal.web3sdk.io/react/react.web3sdkionftmedia) component to display the metadata:
+Map / Display each using the [`Web3sdkioNftMedia`](https://docs.web3sdk.io/react/react.web3sdkionftmedia) component to display the metadata:
 
 ```tsx
 return (
@@ -448,7 +448,7 @@ It looks like this:
 
 ![Rewards Component](https://cdn.hashnode.com/res/hashnode/image/upload/v1655949917550/en2h7OUda.png)
 
-The price for each pickaxe NFT is configured with the drop's [claim phases](https://portal.web3sdk.io/pre-built-contracts/edition-drop#setting-claim-phases).
+The price for each pickaxe NFT is configured with the drop's [claim phases](https://docs.web3sdk.io/pre-built-contracts/edition-drop#setting-claim-phases).
 
 The claim phases allows us to use our GEMs token as the currency for the NFT.
 
@@ -518,4 +518,4 @@ That said, we want to credit the awesome artists for their work:
 
 ## Join our Discord!
 
-For any questions, suggestions, join our discord at [https://discord.gg/web3sdkio](https://discord.gg/web3sdkio).
+For any questions, suggestions, join our discord at [https://discord.gg/n33UhsfUKB](https://discord.gg/n33UhsfUKB).

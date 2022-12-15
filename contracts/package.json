@@ -16,6 +16,6 @@
     "hardhat": "latest",
     "@openzeppelin/contracts": "^4.6.0",
     "@openzeppelin/contracts-upgradeable": "^4.6.0",
-    "@web3sdkio/contracts": "^3"
+    "@web3sdkio/contracts": "^1.0.6"
   }
 }
